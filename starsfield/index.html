@@ -9,7 +9,8 @@
 		html,
 		body {
 			height: 100%;
-			margin: 0
+			margin: 0;
+			background: #000;
 		}
 
 		#stage {
@@ -28,13 +29,18 @@
 			inset: 0;
 			z-index: 0
 		}
+
+		/* ensure canvas background is dark in case body styles are overridden */
+		#stars {
+			background: #000;
+		}
 	</style>
 </head>
 
 <body>
 	<div id="stage"> <canvas id="stars"></canvas> </div>
 	<!-- load as a normal script so file:// access works in browsers -->
-	<script src="starfield.js"></script>
+	<script src="starsfield.js"></script>
 </body>
 
 </html>
