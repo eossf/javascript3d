@@ -6,7 +6,7 @@ canvas.width = 800;
 canvas.height = 800;
 const ctx = canvas.getContext('2d');
 
-const FPS = 30;
+const FPS = 100;
 
 function clear() {
     ctx.fillStyle = '#000';
@@ -24,7 +24,7 @@ function screen(p) {
 
 function project({ x, y, z }) {
     // simple perspective projection
-    const f = 3; // focal distance
+    const f = 1; // focal distance
     return { x: x / (z + f), y: y / (z + f) };
 }
 
@@ -91,13 +91,13 @@ function frame() {
             ctx.lineTo(pts2d[k].x, pts2d[k].y);
         }
         ctx.closePath();
-        ctx.fillStyle = 'rgba(80,200,240,0.3)';
+        ctx.fillStyle = 'rgba(80, 240, 139, 0.3)';
         ctx.fill();
         ctx.strokeStyle = '#fff';
         ctx.stroke();
     }
 
-    angle += 0.01; // low uniform speed
+    angle += 0.02; // low uniform speed
     setTimeout(frame, 1000 / FPS);
 }
 
