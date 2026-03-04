@@ -19,12 +19,16 @@ status: done
 SPEC-003-starsfield
 status: done
 
-SPEC-004-cube-with-light-faces
-status: #TODO
+SPEC-004-cube-with-6-faces
+status: done
+where to implement: cube-6f
 
 - build a cube in javascript canvas
-- with 6 faces
+- minimalist code, no framework
+- data in data.js
+- code in games.js
+- the cube is with 6 faces
 - do a rotation on each axes x, y, z
-- the rotation is at the same speed
+- the rotation is at the same speed, low speed
 - the size of the screen is 800x800 pixels
 - the cube has a size of 400x400

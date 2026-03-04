@@ -14,7 +14,9 @@ Browser-based in javascript
 
 ## Setup & Commands (Always use these — do NOT guess)
 
-Key files
+A demo is in a folder
+
+Key files, in folder
 - `cube`
 - `penguin`
 - `starfields`
