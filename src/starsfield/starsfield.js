@@ -1,12 +1,12 @@
 // Starfield (100 stars) — draws animated stars into the #stars canvas
-const STAR_COUNT = 10500;
+const STAR_COUNT = 50000;
 // run duration in milliseconds (10s)
 const STAR_DURATION_MS = 15000;
 const SPEED_MIN = 0.8;
-const SPEED_MAX = 1;
+const SPEED_MAX = 2;
 
 // slow rotation in radians per second
-const ROTATION_SPEED = 0.2;
+const ROTATION_SPEED = 0.9;
 let rotationAngle = 0;
 
 const canvas = document.getElementById('stars');
