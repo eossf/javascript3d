@@ -1,5 +1,5 @@
 import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.150.0/build/three.module.js';
-import { vs, fs } from './penguin.js';
+import { vs, fs } from './data.js';
 
 // basic scene/camera/renderer setup
 const scene = new THREE.Scene();

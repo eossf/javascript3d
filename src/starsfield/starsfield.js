@@ -1,12 +1,11 @@
 // Starfield (100 stars) — draws animated stars into the #stars canvas
-const STAR_COUNT = 50000;
-// run duration in milliseconds (10s)
-const STAR_DURATION_MS = 15000;
-const SPEED_MIN = 0.8;
-const SPEED_MAX = 2;
+const STAR_COUNT = 5000;
+const STAR_DURATION_MS = 60*1000;
+const SPEED_MIN = 0.1;
+const SPEED_MAX = 1;
 
 // slow rotation in radians per second
-const ROTATION_SPEED = 0.9;
+const ROTATION_SPEED = 0.1;
 let rotationAngle = 0;
 
 const canvas = document.getElementById('stars');
@@ -29,8 +28,8 @@ function resize(){
 
 function createStar(){
   const z = rand(0.2, 1.2);
-  const cx = width / 2;
-  const cy = height / 2;
+  const cx = width /2;
+  const cy = height /2;
   // place stars in a circle (radius = half diagonal) around canvas center
   const maxRadius = Math.hypot(width, height) / 2;
   const angle = Math.random() * Math.PI * 2;
@@ -41,7 +40,7 @@ function createStar(){
     r: rand(0.5, 0.5) * (1 / z),
     z,
     twinkleOffset: Math.random()*Math.PI*2,
-    color: `${Math.floor(rand(100,255))},${Math.floor(rand(100,255))},${Math.floor(rand(100,255))}`,
+    color: `${Math.floor(rand(255,255))},${Math.floor(rand(100,255))},${Math.floor(rand(100,255))}`,
     speed: rand(SPEED_MIN, SPEED_MAX) * (1/z)
   };
 }

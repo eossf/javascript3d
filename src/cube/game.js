@@ -1,3 +1,5 @@
+import { vs, fs } from './data.js';
+
 const BACKGROUND = "#101010"
 const FOREGROUND = "#50FF50"
 
